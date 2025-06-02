@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Dashboard</title>
+     <link rel="stylesheet" href="board.css">       
+</head>
+<body>
+
+    <nav>
+        <h1>Dashboard</h1>
+        <ul>
+            <li><a href="dboard.html">Home|</a></li>
+            <li><a href="about.html">About Us|</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <center><h1>HTML</h1></center>
+        <h4>What is HTML?</h4>
+        <p>
+            An HTML (HyperText Markup Language) page is the foundation of every webpage you see online.
+            It's the language that defines the structure and content of a web page by using tags to organize
+            elements like text, images, links, and other multimedia.
+        </p>
+        <img src="download.jpg" height="400" width="400" alt="HTML illustration">
+    </section>
+
+    
+    <script>
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display:flex;
+    justify-content:left;
+    align-items: left ;
+    height: 100vh;
+}
+.container{
+    border-style: ridge;
+    color: #fff;
+    background: rgb(3,3,3);
+background: linear-gradient(116deg, rgba(3,3,3,1) 0%, rgba(62,148,164,1) 99%);
+}
+.container h2{
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.container input{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    width: 1300px; 
+    border: 1px solid black;
+    outline: none;
+}
+
+
+
+#jeevi{
+ 
+   padding: 80px 100px;
+   text-align: center;
+}
+#Gv {
+    margin: 100px 550px;
+    border: 1px ;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor:default;
+    width: 200px;
+    padding: 30px;   
+}
+
+#thangam{
+    align-items:left;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    width: 650px;
+}
+#gowri{
+    align-items: right;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    width: 650px;
+}
+#prabha{
+    padding: 20px 30px;
+}
+
+#rose{
+    align-items: left;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    width: 650px;
+
+}
+#me{
+    align-items: right;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    width: 650px;
+
+}
+ nav {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
+
+    nav h1, nav ul {
+      display: inline;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-left: 50%;
+    }
+
+    nav li {
+      display: inline;
+      margin-left: 15px;
+    }
+

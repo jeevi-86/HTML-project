@@ -1,0 +1,48 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+/* Inline display for nav items */
+h1, ul, li {
+    display: inline;
+}
+
+/* Align the nav list to the right */
+ul {
+    margin-left: 60%;
+}
+
+/* List item styling */
+li {
+    color: grey;
+    cursor: pointer;
+}
+
+/* Hover effect for list items */
+li:hover {
+    color: white;
+}
+
+button {
+    float: right;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: darkred;
+}

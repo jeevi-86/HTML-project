@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <form id="loginForm">
+        <div class="container">
+            <center><h1>Login Page</h1></center>
+
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group"> 
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required minlength="6" maxlength="8">          
+            </div>
+
+            <button type="submit" class="registerbtn">Login</button>
+            <button type="button" class="registerbtn" onclick="forgotPassword()">Forgot Password</button>
+        </div>
+    </form>
+
+    <script>
+        const correctEmail = "jeevithat@gmail.com";
+        const defaultPassword = "1234567";
+        function forgotPassword() {
+            const emailInput = document.getElementById("email").value.trim();
+
+            if (emailInput === correctEmail) {
+                document.getElementById("psw").value = defaultPassword;
+                alert("Default password has been filled in.");
+            } else {
+                alert("Email not recognized. Please enter your correct email first.");
+            }
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const enteredEmail = document.getElementById("email").value.trim();
+            const enteredPassword = document.getElementById("psw").value;
+
+            if (enteredEmail === correctEmail && enteredPassword === defaultPassword) {
+                alert("Login successful!");
+                window.location.href = "dboard.html";
+            } else {
+                alert("Invalid email or password!");
+            
+            }
+        });
+    </script>
+</body>
+</html>
+
